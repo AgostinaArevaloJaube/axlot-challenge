@@ -1,3 +1,5 @@
+![axlot-logo](assets/axlot-logo.png "Axlot logo")
+
 # Axlot Challenge
 
 Maquetado de un music player.
@@ -14,4 +16,4 @@ Maquetado de un music player.
 
 ## Mock
 
-![referencia](assets/reference.png)
+![referencia](assets/reference.png 'Mock')
