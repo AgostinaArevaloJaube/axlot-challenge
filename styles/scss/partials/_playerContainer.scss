@@ -1,6 +1,7 @@
 .player-container {
 	max-height: 50%;
 	max-width: 100%;
+	position: relative;
 
 	.image {
 		min-height: 100%;
@@ -10,5 +11,60 @@
 	@media screen and (min-width: $above700) {
 		min-width: 40%;
 		min-height: 100%;
+	}
+
+	.player {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		background-color: rgba(102, 102, 102, 0.705);
+		z-index: 100;
+
+		.controlers {
+			padding: 0.8rem 1.5rem 1rem 1.5rem;
+			min-width: 100%;
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+		}
+
+		.play {
+			padding: 0.4rem;
+			background-color: $secondary-color-first-variant;
+			border-radius: 30px;
+		}
+
+		.timing {
+			padding: 1.5rem 1.5rem 0.9rem 1.5rem;
+			position: relative;
+
+			.full-line {
+				height: 4px;
+				background-color: $light-background;
+				border: none;
+			}
+
+			.blue-line {
+				position: relative;
+				top: -0.25rem;
+				height: 4px;
+				width: 70%;
+				background-color: $secondary-color-first-variant;
+				border: none;
+			}
+
+			.cursor {
+				position: relative;
+				top: -0.91rem;
+				left: 70%;
+				width: 16px;
+				height: 16px;
+				border-radius: 10px;
+				border: 2px solid $light-background;
+				box-shadow: 0px -2px 6px #42424229;
+				background-color: $secondary-color-first-variant;
+			}
+		}
 	}
 }
