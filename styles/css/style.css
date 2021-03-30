@@ -3,8 +3,11 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+body {
   font-family: "Montserrat", sans-serif;
-  background-color: #faf8f7;
+  color: #666666;
 }
 
 .flex-container {
@@ -20,12 +23,13 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-color: #faf8f7;
 }
 
 .container {
-  width: 25rem;
-  height: 28rem;
-  border: 2px solid gray;
+  max-width: 80%;
+  border: 1px solid #42424229;
+  border-radius: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -33,10 +37,20 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  -webkit-box-shadow: 0px 2px 8px #00000029;
+          box-shadow: 0px 2px 8px #00000029;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 480px) {
   .container {
+    max-width: 60%;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .container {
+    max-width: 80%;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -44,13 +58,106 @@
   }
 }
 
-.playerContainer {
-  min-height: 50%;
-  min-width: 50%;
+.player-container {
+  max-height: 50%;
+  max-width: 100%;
 }
 
-.playlistContainer {
-  min-height: 50%;
-  min-width: 50%;
+.player-container .image {
+  min-height: 100%;
+  max-width: 100%;
+}
+
+@media screen and (min-width: 700px) {
+  .player-container {
+    min-width: 40%;
+    min-height: 100%;
+  }
+}
+
+.playlist-container {
+  padding: 1rem 1rem 1rem 1.5em;
+  max-height: 50%;
+  max-width: 100%;
+}
+
+@media screen and (min-width: 700px) {
+  .playlist-container {
+    max-height: 100%;
+    min-width: 50%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .playlist-container {
+    min-width: 25rem;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .playlist-container {
+    min-width: 30rem;
+  }
+}
+
+.playlist-container .musician-container {
+  padding-right: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.playlist-container .musician-container .name {
+  font-size: 20px;
+}
+
+@media screen and (min-width: 700px) {
+  .playlist-container .musician-container .name {
+    font-size: 24px;
+  }
+}
+
+.playlist-container .musician-container .album {
+  font-size: 16px;
+}
+
+.playlist-container .songs {
+  padding-top: 1rem;
+  width: 100%;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 12px;
+}
+
+@media screen and (min-width: 700px) {
+  .playlist-container .songs {
+    width: 95%;
+  }
+}
+
+.playlist-container .songs .song {
+  margin: 4px 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 5fr 0.5fr 0.5fr;
+      grid-template-columns: 5fr 0.5fr 0.5fr;
+}
+
+@media screen and (min-width: 700px) {
+  .playlist-container .songs .song {
+    margin: 0.8rem 0;
+  }
+}
+
+.playlist-container .songs img {
+  margin: 0 auto;
+}
+
+.playlist-container .songs .selected {
+  color: #5a90bc;
 }
 /*# sourceMappingURL=style.css.map */
