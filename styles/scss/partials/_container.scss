@@ -1,0 +1,27 @@
+.flex-container {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	background-color: $light-background;
+}
+
+.container {
+	max-width: 80%;
+	border: 1px solid $primary-color-second-variant;
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+	background: #ffffff 0% 0% no-repeat padding-box;
+	box-shadow: $box-shadow;
+
+	@media screen and (min-width: $above480) {
+		max-width: 60%;
+	}
+
+	@media screen and (min-width: $above700) {
+		max-width: 80%;
+		flex-direction: row;
+	}
+}
