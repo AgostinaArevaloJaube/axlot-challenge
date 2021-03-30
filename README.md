@@ -4,12 +4,17 @@
 
 Maquetado de un music player.
 
-[Link a la demo]()
+[Link a la demo](https://axlot-challenge.netlify.app/)
+<br>
+[Link al GitHub](https://github.com/AgostinaArevaloJaube/axlot-challenge)
 
 ## Stack utilizado
 
 - HTML
 - Sass
+
+## Layout
+- Mobile first
 
 ## Entregable
 
