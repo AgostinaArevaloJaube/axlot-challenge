@@ -1,0 +1,14 @@
+.player-container {
+	max-height: 50%;
+	max-width: 100%;
+
+	.image {
+		min-height: 100%;
+		max-width: 100%;
+	}
+
+	@media screen and (min-width: $above700) {
+		min-width: 40%;
+		min-height: 100%;
+	}
+}
